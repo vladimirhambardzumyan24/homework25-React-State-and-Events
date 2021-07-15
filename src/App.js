@@ -7,13 +7,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentNum: "",
-      minValue: 0,
-      maxValue: 0,
-      stepValue: 0,
+      currentNum: window.localStorage.getItem("currentNum"),
+      minValue: window.localStorage.getItem("minValue"),
+      maxValue: window.localStorage.getItem("maxValue"),
+      stepValue: window.localStorage.getItem("stepValue"),
     };
   }
-  localStorage=()=>{
+
+  componentDidUpdate(){
     window.localStorage.setItem("currentNum", this.state.currentNum)
     window.localStorage.setItem("minValue", this.state.minValue)
     window.localStorage.setItem("maxValue", this.state.maxValue)
