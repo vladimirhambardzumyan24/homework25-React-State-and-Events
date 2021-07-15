@@ -1,5 +1,5 @@
 import React from "react";
-import "./Calculate.css";
+import "../Calculate.css";
 import Buttons from "./Buttons";
 import InputBlock from "./InputBlock";
 
@@ -65,7 +65,7 @@ class Calculate extends React.Component {
   render() {
     return (
       <div className="container">
-          <h1>{this.state.currentNum}</h1>
+          <h1>Current: {this.state.currentNum}</h1>
           <InputBlock htmlFor="min" numName="Cur Number" id="min" onChange={this.changeCurrentNum}/>
           <InputBlock htmlFor="min" numName="Min Number" id="min" onChange={this.changeMin}/>
           <InputBlock htmlFor="max" numName="Max Number" id="max" onChange={this.changeMax}/>

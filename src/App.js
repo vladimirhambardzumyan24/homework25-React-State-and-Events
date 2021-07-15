@@ -1,5 +1,5 @@
 import React from "react";
-import Calculate from "./Calculate";
+import Calculate from "./Components/Calculate";
 
 class App extends React.Component {
 
